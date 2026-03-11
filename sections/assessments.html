@@ -1,0 +1,26 @@
+<!-- ════════════════════════════════════════
+     ASSESSMENTS
+════════════════════════════════════════ -->
+<section class="assess" id="assessments" aria-labelledby="assess-heading">
+  <div class="assess-hdr rv">
+    <span class="slabel">Self-Assessment Tools</span>
+    <h2 class="stitle" id="assess-heading">Understand How You're Feeling</h2>
+    <p class="ssub">These clinically validated questionnaires help you reflect on your mental health. Results are for personal awareness only — not a clinical diagnosis.</p>
+  </div>
+  <div class="assess-tabs rv">
+    <button class="atab on" id="tab-bdi" onclick="switchTab('bdi')" aria-selected="true">🧠 Beck Depression Inventory (BDI-II)</button>
+    <button class="atab" id="tab-bai" onclick="switchTab('bai')" aria-selected="false">💭 Beck Anxiety Inventory (BAI)</button>
+  </div>
+  <div class="apanel on" id="panel-bdi" role="tabpanel">
+    <div class="anote">Read each group carefully and select the statement that <strong>best describes how you've been feeling over the past two weeks</strong>.</div>
+    <div id="bdi-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBDI()">Calculate My BDI Score →</button></div>
+    <div class="a-result" id="bdi-result" role="status"></div>
+  </div>
+  <div class="apanel" id="panel-bai" role="tabpanel">
+    <div class="anote">Indicate how much each symptom has <strong>bothered you during the past month</strong>, including today.</div>
+    <div id="bai-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBAI()">Calculate My BAI Score →</button></div>
+    <div class="a-result" id="bai-result" role="status"></div>
+  </div>
+</section>
