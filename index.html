@@ -1,0 +1,636 @@
+<!-- !! DO NOT EDIT index.html DIRECTLY !!
+     Edit the relevant file in sections/ and run: node build.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- =============================================
+     MindWave Counselling — index.html
+     Stylesheet: style.css  |  Scripts: main.js
+     ============================================= -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ── PRIMARY SEO META ── -->
+<title>MindWave Counselling | Tejal Khedkar — Anxiety, Depression & Relationship Therapy in India</title>
+<meta name="description" content="MindWave Counselling offers professional online and in-person therapy with Tejal Khedkar, MSc Counselling Psychology. Specialising in anxiety, depression, CBT, REBT and couples therapy across India. Book your first session today."/>
+<meta name="keywords" content="counselling psychologist India, online therapy India, anxiety therapy, depression counselling, CBT therapist, REBT, couples therapy, individual therapy, Dr Tejal Khedkar, MindWave Counselling, mental health India"/>
+<meta name="author" content="Tejal Khedkar — MindWave Counselling"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.mindwavecounselling.com/"/>
+
+<!-- ── FAVICON ── -->
+<link rel="icon" type="image/png" href="mindwave-counselling.png"/>
+<link rel="apple-touch-icon" href="mindwave-counselling.png"/>
+
+<!-- ── OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ── -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.mindwavecounselling.com/"/>
+<meta property="og:site_name" content="MindWave Counselling"/>
+<meta property="og:title" content="MindWave Counselling | Tejal Khedkar — Therapy for Anxiety, Depression & Relationships"/>
+<meta property="og:description" content="Professional online and in-person counselling with Tejal Khedkar. CBT, REBT & Integrative Therapy. Serving clients across India. Book a session today."/>
+<meta property="og:locale" content="en_IN"/>
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="MindWave Counselling | Tejal Khedkar"/>
+<meta name="twitter:description" content="Professional counselling for anxiety, depression, relationships & more. Online & in-person. Book with Tejal today."/>
+
+<!-- ── GEO / LOCAL SEO ── -->
+<meta name="geo.region" content="IN"/>
+<meta name="geo.placename" content="India"/>
+<meta name="language" content="English"/>
+
+<!-- ── STRUCTURED DATA: Person + LocalBusiness + FAQPage ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.mindwavecounselling.com/#person",
+      "name": "Tejal Khedkar",
+      "jobTitle": "Counselling Psychologist",
+      "description": "MSc Counselling Psychology, certified in REBT and CBT, offering individual, couples and group therapy online and in-person across India.",
+      "url": "https://www.mindwavecounselling.com/",
+      "telephone": "+918669988743",
+      "email": "mindwavecounselling@gmail.com",
+      "knowsAbout": ["Anxiety", "Depression", "CBT", "REBT", "Couples Therapy", "Grief", "Burnout", "Integrative Therapy"],
+      "knowsLanguage": ["English", "Hindi", "Marathi"],
+      "sameAs": ["https://www.linkedin.com","https://www.instagram.com"]
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.mindwavecounselling.com/#business",
+      "name": "MindWave Counselling",
+      "description": "Professional counselling and psychotherapy services for individuals, couples and groups. Specialising in anxiety, depression, REBT, CBT and integrative therapy.",
+      "url": "https://www.mindwavecounselling.com/",
+      "telephone": "+918669988743",
+      "email": "mindwavecounselling@gmail.com",
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa 09:00-18:00",
+      "areaServed": {"@type": "Country", "name": "India"},
+      "availableLanguage": ["English", "Hindi", "Marathi"],
+      "medicalSpecialty": "Psychiatry and Psychology",
+      "employee": {"@id": "https://www.mindwavecounselling.com/#person"},
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Therapy Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Individual Therapy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Couples Therapy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Group Sessions"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Online Therapy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wellness Consultations"}}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I book a therapy session with Tejal?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Fill in the booking form on our website. Tejal will respond via email or WhatsApp within 24 hours to confirm your appointment."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does MindWave Counselling offer online therapy sessions?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. MindWave Counselling offers secure online video sessions accessible from anywhere in India, with the same quality as in-person care."}
+        },
+        {
+          "@type": "Question",
+          "name": "What therapy approaches does Tejal use?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Tejal draws on REBT (Rational Emotive Behaviour Therapy), CBT (Cognitive Behavioural Therapy), and Integrative Therapy to create a personalised approach for each client."}
+        },
+        {
+          "@type": "Question",
+          "name": "What languages are sessions available in?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sessions are available in English, Hindi, and Marathi."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ── FONTS ── -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<!-- ── STYLESHEET ── -->
+<link rel="stylesheet" href="style.css"/>
+
+<!-- ── EMAIL JS ── -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="/" aria-label="MindWave Counselling — Home">
+    <img src="mindwave-counselling.png" alt="MindWave Counselling"/>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">MindWave</span>
+      <span class="nav-logo-tagline">Counselling</span>
+    </div>
+  </a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#assessments">Self-Assessment</a></li>
+    <li><a href="#stories">Stories</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#book" class="ncta">Book a Session</a></li>
+  </ul>
+</nav>
+
+
+<main>
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero" id="home" aria-label="Welcome to MindWave Counselling">
+  <!-- Mind · Wave · Heart — brain connects to heart through flowing waves -->
+  <svg class="hero-bg-svg" viewBox="0 0 1440 780" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="brainGlow" cx="25%" cy="50%" r="30%">
+        <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="heartGlow" cx="75%" cy="50%" r="32%">
+        <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.90"/>
+        <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#c4844a" stop-opacity="0.55"/>
+        <stop offset="50%"  stop-color="#d4956a" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#c4844a" stop-opacity="0.55"/>
+      </linearGradient>
+      <linearGradient id="sweepG1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#e8a27a" stop-opacity="0"/>
+        <stop offset="45%"  stop-color="#c4844a" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#e8a27a" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <!-- Ambient glows behind brain and heart -->
+    <ellipse cx="340"  cy="390" rx="280" ry="240" fill="url(#brainGlow)"/>
+    <ellipse cx="1080" cy="390" rx="300" ry="250" fill="url(#heartGlow)"/>
+
+    <!-- Wide sweeping background waves (full canvas) -->
+    <path class="wave-sweep ws1"
+      d="M-80,590 C200,520 440,582 720,530 C1000,478 1180,540 1460,492"
+      fill="none" stroke="url(#sweepG1)" stroke-width="100" stroke-linecap="round" opacity="0.28"/>
+    <path class="wave-sweep ws2"
+      d="M-80,210 C200,270 440,210 720,258 C1000,306 1180,248 1460,292"
+      fill="none" stroke="url(#sweepG1)" stroke-width="80"  stroke-linecap="round" opacity="0.20"/>
+
+    <!-- ══ BRAIN / MIND (left column, ~340, 390) ══ -->
+    <g class="brain-g-wrap" transform="translate(340,390) scale(0.78) translate(-340,-390)">
+    <g class="brain-shape" filter="url(#glow)">
+      <!-- Brain outer silhouette — two-lobe organic shape -->
+      <path
+        d="M340,294 C386,272 442,278 468,312 C492,342 488,378 466,400
+           C484,418 492,450 480,474 C468,498 442,508 414,502
+           C396,520 370,528 344,522 C336,528 328,530 320,526
+           C312,530 304,528 296,522 C270,528 244,520 226,502
+           C198,508 172,498 160,474 C148,450 156,418 174,400
+           C152,378 148,342 172,312 C198,278 254,272 300,294
+           C312,288 326,286 340,294 Z"
+        fill="rgba(232,162,122,0.10)" stroke="rgba(196,132,106,0.38)" stroke-width="1.8"/>
+    </g>
+    </g><!-- /brain scale wrapper -->
+    <!-- Brain folds -->
+    <g class="brain-folds" fill="none" stroke="rgba(160,100,68,0.26)" stroke-width="1.1" stroke-linecap="round">
+      <!-- Left hemisphere -->
+      <path d="M296,312 C310,296 328,298 336,316 C344,332 338,354 322,360"/>
+      <path d="M282,362 C270,382 274,408 288,422 C300,434 318,430 324,414"/>
+      <path d="M316,298 C328,284 352,284 364,298"/>
+      <!-- Right hemisphere -->
+      <path d="M384,312 C370,296 352,298 344,316"/>
+      <path d="M398,362 C410,382 406,408 392,422 C380,434 362,430 356,414"/>
+      <!-- Corpus callosum hint -->
+      <path d="M340,314 C338,346 338,382 340,422" stroke-dasharray="3,8" stroke-opacity="0.40"/>
+      <!-- Extra folds for depth -->
+      <path d="M270,344 C260,366 264,394 278,408"/>
+      <path d="M410,344 C420,366 416,394 402,408"/>
+    </g>
+
+    <!-- ══ CONNECTION WAVES: brain → heart (desktop: 480→928) ══ -->
+    <path class="cw1"
+      d="M480,372 C556,348 624,396 700,372 C776,348 844,390 928,372"
+      fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
+    <path class="cw2"
+      d="M480,392 C560,368 632,416 708,392 C784,368 856,410 928,392"
+      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+    <path class="cw3"
+      d="M480,412 C558,436 628,388 704,412 C780,436 852,394 928,414"
+      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+    <path class="cw4"
+      d="M480,352 C564,328 636,370 712,350 C788,330 860,366 928,350"
+      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- ══ CONNECTION WAVES: mobile only (680→780) ══ -->
+    <path class="cw1m"
+      d="M680,372 C706,348 754,396 780,372"
+      fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
+    <path class="cw2m"
+      d="M680,392 C708,368 752,416 780,392"
+      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+    <path class="cw3m"
+      d="M680,412 C708,436 752,388 780,412"
+      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+    <path class="cw4m"
+      d="M680,352 C708,328 752,370 780,352"
+      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- ══ HEART (right column, ~1060, 390) ══ -->
+    <g class="heart-g-wrap">
+    <path class="heart-outer" filter="url(#glow)"
+      d="M1060,316 C982,260 924,294 924,368 C924,442 1060,526 1060,526 C1060,526 1196,442 1196,368 C1196,294 1138,260 1060,316 Z"
+      fill="rgba(232,162,122,0.12)" stroke="rgba(196,132,106,0.44)" stroke-width="2.2"/>
+    <path class="heart-inner"
+      d="M1060,348 C1002,308 956,332 956,380 C956,428 1060,496 1060,496 C1060,496 1164,428 1164,380 C1164,332 1118,308 1060,348 Z"
+      fill="rgba(212,149,106,0.12)" stroke="rgba(196,132,106,0.32)" stroke-width="1.7"/>
+    <path class="heart-core"
+      d="M1060,378 C1034,358 1008,372 1008,400 C1008,428 1060,460 1060,460 C1060,460 1112,428 1112,400 C1112,372 1086,358 1060,378 Z"
+      fill="rgba(196,132,106,0.10)" stroke="rgba(196,132,106,0.25)" stroke-width="1.3"/>
+    <!-- Mind folds inside heart -->
+    <g fill="none" stroke="rgba(155,96,68,0.26)" stroke-width="1.1" stroke-linecap="round">
+      <path d="M1020,358 C1034,342 1054,346 1062,364 C1070,380 1064,402 1048,410"/>
+      <path d="M1100,358 C1086,342 1066,346 1058,364"/>
+      <path d="M1010,404 C1000,422 1004,448 1018,460 C1030,470 1048,466 1054,450"/>
+      <path d="M1110,404 C1120,422 1116,448 1102,460 C1090,470 1072,466 1066,450"/>
+      <path d="M1040,340 C1052,328 1070,328 1082,340"/>
+      <path d="M1060,364 C1058,392 1058,428 1060,454" stroke-dasharray="3,7" stroke-opacity="0.40"/>
+    </g>
+    </g>
+
+    <!-- Floating particles scattered around both shapes and connection -->
+    <circle class="p1" cx="520" cy="240" r="3.5" fill="rgba(196,132,106,0.52)"/>
+    <circle class="p2" cx="640" cy="185" r="2.8" fill="rgba(212,149,106,0.48)"/>
+    <circle class="p3" cx="530" cy="545" r="2.5" fill="rgba(196,132,106,0.42)"/>
+    <circle class="p4" cx="730" cy="295" r="3.0" fill="rgba(212,149,106,0.40)"/>
+    <circle class="p5" cx="730" cy="505" r="2.8" fill="rgba(196,132,106,0.38)"/>
+    <circle class="p6" cx="870" cy="225" r="3.2" fill="rgba(212,149,106,0.42)"/>
+    <circle class="p7" cx="900" cy="555" r="2.0" fill="rgba(196,132,106,0.35)"/>
+    <circle class="p8" cx="710" cy="485" r="2.5" fill="rgba(212,149,106,0.44)"/>
+
+    <!-- Scatter atmosphere dots -->
+    <g fill="rgba(196,132,106,0.16)">
+      <circle cx="100" cy="660" r="2.5"/>
+      <circle cx="1380" cy="140" r="2.0"/>
+      <circle cx="720"  cy="118" r="3.0"/>
+      <circle cx="1260" cy="650" r="2.2"/>
+      <circle cx="260"  cy="130" r="2.0"/>
+    </g>
+  </svg>
+
+  <div class="rv">
+    <div class="hero-badge"><i></i>Now Accepting New Clients</div>
+    <h1>You Deserve a Mind<br/>That Feels at <em>Peace.</em></h1>
+    <p class="hero-lead">Compassionate, evidence-based therapy for anxiety, depression, relationship challenges, and life transitions — online across India &amp; in-person in Nagpur.</p>
+    <p class="hero-tag">With Tejal Khedkar · MSc Counselling Psychology · REBT &amp; CBT Certified</p>
+    <div class="hero-btns">
+      <a href="#book" class="btn-p">Book a Session →</a>
+      <a href="#about" class="btn-s">Meet Tejal</a>
+    </div>
+  </div>
+  <div class="rv" style="transition-delay:.15s">
+    <div class="hero-card">
+      <div class="hcn">Tejal Khedkar</div>
+      <div class="hct">MSc · Counselling Psychologist · REBT &amp; CBT Certified</div>
+      <div class="htags">
+        <span class="tag">Anxiety</span>
+        <span class="tag">Depression</span>
+        <span class="tag">Relationships</span>
+        <span class="tag">Burnout</span>
+        <span class="tag">Grief</span>
+        <span class="tag">CBT</span>
+        <span class="tag">REBT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section class="about" id="about" aria-labelledby="about-heading">
+  <div class="about-g">
+    <div class="photo-wrap rv">
+      <img src="profile-photo-1.png" alt="Tejal Khedkar — Counselling Psychologist, MindWave Counselling" width="600" height="750" loading="lazy"/>
+      <div class="blob-badge"><strong>MSC</strong><span>Counselling Psychology</span></div>
+    </div>
+    <div class="rv" style="transition-delay:.1s">
+      <span class="slabel">About Me</span>
+      <h2 class="stitle" id="about-heading">A Safe Space to Be<br/><em>Fully Yourself</em></h2>
+      <div class="about-text">
+        <p>Hey — I'm Tejal, a qualified Counselling Psychologist with an MSC in Counselling Psychology. I get it: asking for help can feel awkward, scary, or like a lot. That's exactly why I've built a space that feels nothing like a stuffy clinic.</p>
+        <p>Whether you're navigating anxiety, burnout, relationship struggles, identity questions, or just feel like something's off — I work <em>with</em> you, not <em>at</em> you. I see individuals, couples, and groups, blending REBT, CBT, and integrative therapy to fit <em>your</em> life, not a textbook.</p>
+      </div>
+      <div class="creds">
+        <div class="cred"><span style="font-size:1.3rem">🎓</span><div><div class="ct">MSC in Counselling Psychology</div><div class="cs">Postgraduate Qualification</div></div></div>
+        <div class="cred"><span style="font-size:1.3rem">🧠</span><div><div class="ct">Certified in REBT &amp; CBT</div><div class="cs">Evidence-Based Therapeutic Modalities</div></div></div>
+        <div class="cred"><span style="font-size:1.3rem">🌿</span><div><div class="ct">Integrative Therapy Practice</div><div class="cs">Holistic, Person-Centred Approach</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════ -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="svc-hdr rv">
+    <span class="slabel">What I Offer</span>
+    <h2 class="stitle" id="services-heading">Support That Actually Fits Your Life</h2>
+    <p class="ssub">Whether you're figuring stuff out solo, working through things with a partner, or just need someone in your corner — I've got you.</p>
+  </div>
+  <div class="svc-grid">
+    <article class="svc-card rv">
+      <div class="svc-icon" aria-hidden="true">🧘</div>
+      <h3>Individual Therapy</h3>
+      <p>Your space. Your pace. We work through what's weighing on you — anxiety, low mood, burnout, self-worth, or whatever life's throwing at you.</p>
+    </article>
+    <article class="svc-card rv" style="transition-delay:.07s">
+      <div class="svc-icon" aria-hidden="true">💑</div>
+      <h3>Couples Therapy</h3>
+      <p>Communication breakdown? Growing apart? Or just want to be better together? Let's rebuild connection and get you both on the same page.</p>
+    </article>
+    <article class="svc-card rv" style="transition-delay:.14s">
+      <div class="svc-icon" aria-hidden="true">👥</div>
+      <h3>Group Sessions</h3>
+      <p>Heal alongside others who get it. Structured, supportive group therapy to share experiences and build real resilience — together.</p>
+    </article>
+    <article class="svc-card rv" style="transition-delay:.07s">
+      <div class="svc-icon" aria-hidden="true">💻</div>
+      <h3>Online Sessions</h3>
+      <p>Therapy from your couch, your car, wherever works. Same quality support, zero commute — accessible from anywhere in India.</p>
+    </article>
+    <article class="svc-card rv" style="transition-delay:.14s">
+      <div class="svc-icon" aria-hidden="true">🏢</div>
+      <h3>In-Person Sessions</h3>
+      <p>Prefer face-to-face? Based in Nagpur — a calm, private space where you can fully show up and feel held — no distractions, just presence.</p>
+    </article>
+    <article class="svc-card rv" style="transition-delay:.21s">
+      <div class="svc-icon" aria-hidden="true">🌱</div>
+      <h3>Wellness Consultations</h3>
+      <p>Not sure if therapy is for you yet? Let's start with a relaxed wellness chat — stress, life transitions, emotional balance, and more.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     APPROACH
+════════════════════════════════════════ -->
+<section class="appr" id="approach" aria-labelledby="approach-heading">
+  <div class="appr-g">
+    <div class="rv">
+      <span class="slabel">My Methodology</span>
+      <h2 class="stitle" id="approach-heading">How I Actually Work With You</h2>
+      <p class="ssub">No one-size-fits-all scripts here. I draw on three evidence-based approaches and blend them to fit your life, your brain, and your goals.</p>
+      <div class="appr-items">
+        <div class="appr-item">
+          <div class="appr-num">01</div>
+          <div>
+            <h4>Rational Emotive Behaviour Therapy (REBT)</h4>
+            <p>Spot the thought spirals that fuel your stress — and replace them with thinking that's actually useful. Less "I'm failing at life," more "this is hard, and I can handle it."</p>
+          </div>
+        </div>
+        <div class="appr-item">
+          <div class="appr-num">02</div>
+          <div>
+            <h4>Cognitive Behavioural Therapy (CBT)</h4>
+            <p>Understand how your thoughts, feelings, and actions feed each other — then break the cycles that aren't working for you.</p>
+          </div>
+        </div>
+        <div class="appr-item">
+          <div class="appr-num">03</div>
+          <div>
+            <h4>Integrative Therapy</h4>
+            <p>Sometimes one approach isn't enough. I draw from multiple models to meet you where you actually are — not where a textbook says you should be.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="appr-quote rv" style="transition-delay:.15s">
+      <blockquote>"Healing doesn't mean the damage never existed. It means the damage no longer controls our lives."</blockquote>
+      <cite>— A guiding principle in my practice</cite>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BOOKING
+════════════════════════════════════════ -->
+<section class="book-sec" id="book" aria-labelledby="book-heading">
+  <div class="book-g">
+    <div class="rv">
+      <h2 id="book-heading">Ready to Take That First Step?</h2>
+      <p class="bk-p">Reaching out is genuinely the hardest part — and you've already done it by being here. No pressure, no judgment, just a conversation. Let's figure out together what you need.</p>
+      <div class="bk-steps">
+        <div class="bk-step"><div class="bk-circle">1</div><span>Fill in the quick form — takes 2 minutes</span></div>
+        <div class="bk-step"><div class="bk-circle">2</div><span>I'll reach out via email or WhatsApp within 24 hrs</span></div>
+        <div class="bk-step"><div class="bk-circle">3</div><span>Show up as you are — I'll handle the rest</span></div>
+      </div>
+    </div>
+    <div class="bk-form rv" style="transition-delay:.1s">
+      <h3>Book a Session</h3>
+      <div class="frow">
+        <div class="fg"><label for="bf">First Name</label><input type="text" id="bf" placeholder="First name" autocomplete="given-name"/></div>
+        <div class="fg"><label for="bl">Last Name</label><input type="text" id="bl" placeholder="Last name" autocomplete="family-name"/></div>
+      </div>
+      <div class="fg"><label for="be">Email</label><input type="email" id="be" placeholder="your@email.com" autocomplete="email"/></div>
+      <div class="fg"><label for="bp">Phone / WhatsApp</label><input type="tel" id="bp" placeholder="+91 XXXXX XXXXX" autocomplete="tel"/></div>
+      <div class="fg">
+        <label for="bt">Session Type</label>
+        <select id="bt">
+          <option value="">Select a session type</option>
+          <option>Individual Therapy</option>
+          <option>Couples Therapy</option>
+          <option>Group Session</option>
+          <option>Online Session</option>
+          <option>In-Person Session</option>
+          <option>Wellness Consultation</option>
+        </select>
+      </div>
+      <div class="fg"><label for="bm">Message (Optional)</label><textarea id="bm" placeholder="Share anything you'd like me to know…"></textarea></div>
+      <button class="btn-book" id="bookBtn" onclick="doBook()">Request Appointment →</button>
+      <div class="form-msg" id="formMsg" role="alert"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ASSESSMENTS
+════════════════════════════════════════ -->
+<section class="assess" id="assessments" aria-labelledby="assess-heading">
+  <div class="assess-hdr rv">
+    <span class="slabel">Self-Assessment Tools</span>
+    <h2 class="stitle" id="assess-heading">Understand How You're Feeling</h2>
+    <p class="ssub">These clinically validated questionnaires help you reflect on your mental health. Results are for personal awareness only — not a clinical diagnosis.</p>
+  </div>
+  <div class="assess-tabs rv">
+    <button class="atab on" id="tab-bdi" onclick="switchTab('bdi')" aria-selected="true">🧠 Beck Depression Inventory (BDI-II)</button>
+    <button class="atab" id="tab-bai" onclick="switchTab('bai')" aria-selected="false">💭 Beck Anxiety Inventory (BAI)</button>
+  </div>
+  <div class="apanel on" id="panel-bdi" role="tabpanel">
+    <div class="anote">Read each group carefully and select the statement that <strong>best describes how you've been feeling over the past two weeks</strong>.</div>
+    <div id="bdi-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBDI()">Calculate My BDI Score →</button></div>
+    <div class="a-result" id="bdi-result" role="status"></div>
+  </div>
+  <div class="apanel" id="panel-bai" role="tabpanel">
+    <div class="anote">Indicate how much each symptom has <strong>bothered you during the past month</strong>, including today.</div>
+    <div id="bai-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBAI()">Calculate My BAI Score →</button></div>
+    <div class="a-result" id="bai-result" role="status"></div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="testi" id="stories" aria-labelledby="stories-heading">
+  <div class="testi-hdr rv">
+    <span class="slabel">Client Stories</span>
+    <h2 class="stitle" id="stories-heading">What People Are Saying</h2>
+    <p class="ssub">Real words from real people who decided to show up for themselves. Names changed to protect privacy.</p>
+  </div>
+  <div class="testi-grid">
+    <article class="testi-card rv">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">I came in thinking therapy was going to be awkward and clinical. It wasn't. Tejal made me feel like I could say anything without being judged. Within a few sessions, I actually understood why I kept self-sabotaging — and I finally started doing something about it.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">🌸</div><div><div class="testi-name">Aanya, 24</div><div class="testi-label">Individual Therapy · Anxiety &amp; Self-Worth</div></div></div>
+    </article>
+    <article class="testi-card rv" style="transition-delay:.07s">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">My partner and I were at a breaking point. Couples therapy with Tejal didn't just help us communicate better — it helped us actually understand each other. We're in such a different place now.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">💛</div><div><div class="testi-name">Rohan &amp; Priya</div><div class="testi-label">Couples Therapy · Communication &amp; Reconnection</div></div></div>
+    </article>
+    <article class="testi-card rv" style="transition-delay:.14s">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">I honestly didn't think online therapy would feel "real." But Tejal brought so much warmth to every session. She helped me work through burnout and figure out what I actually want from life. Worth every minute.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">🌿</div><div><div class="testi-name">Mihir, 27</div><div class="testi-label">Online Therapy · Burnout &amp; Life Direction</div></div></div>
+    </article>
+    <article class="testi-card rv">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">I was carrying so much grief after losing someone close. Tejal gave me space to feel everything without rushing me. I finally feel like I can breathe again.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">🤍</div><div><div class="testi-name">Sneha, 29</div><div class="testi-label">Individual Therapy · Grief &amp; Loss</div></div></div>
+    </article>
+    <article class="testi-card rv" style="transition-delay:.07s">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">Nothing clicked until I started talking to someone who actually listened and helped me make sense of things. The CBT tools she taught me are something I use every single day now.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">💙</div><div><div class="testi-name">Kabir, 22</div><div class="testi-label">Individual Therapy · Overthinking &amp; CBT</div></div></div>
+    </article>
+    <article class="testi-card rv" style="transition-delay:.14s">
+      <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="testi-text">We were newly married and already struggling. Tejal helped us build something new, on our own terms. We learned to fight without destroying each other, and love without losing ourselves.</p>
+      <div class="testi-author"><div class="testi-avatar" aria-hidden="true">🌺</div><div><div class="testi-name">Ananya &amp; Vikram</div><div class="testi-label">Couples Therapy · Newlyweds &amp; Conflict</div></div></div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="con-g">
+    <div class="rv">
+      <span class="slabel">Get In Touch</span>
+      <h2 class="stitle" id="contact-heading">Let's Start a Conversation</h2>
+      <p class="ssub">Feel free to reach out with questions before booking. Happy to have a brief introductory call.</p>
+      <div class="con-cards">
+        <a class="con-card" href="mailto:mindwavecounselling@gmail.com" aria-label="Send an email to Tejal">
+          <div class="con-icon" style="background:#fce8e0" aria-hidden="true">📧</div>
+          <div><strong>mindwavecounselling@gmail.com</strong><span>Email me anytime</span></div>
+        </a>
+        <a class="con-card" href="tel:+918669988743" aria-label="Call Tejal">
+          <div class="con-icon" style="background:#e8f2e8" aria-hidden="true">📞</div>
+          <div><strong>+91 86699 88743</strong><span>Call during working hours</span></div>
+        </a>
+        <a class="con-card" href="https://wa.me/918669988743" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Tejal">
+          <div class="con-icon" style="background:#e0f7ea" aria-hidden="true">💬</div>
+          <div><strong>WhatsApp Me</strong><span>Quick responses Mon–Sat</span></div>
+        </a>
+      </div>
+    </div>
+    <div class="si-box rv" style="transition-delay:.1s">
+      <h3>Session Information</h3>
+      <div class="si-row"><span>Duration</span><span>50–60 minutes</span></div>
+      <div class="si-row"><span>Session Fee</span><span>Discussed on inquiry</span></div>
+      <div class="si-row"><span>Availability</span><span>Mon – Sat</span></div>
+      <div class="si-row"><span>Format</span><span>Online (pan-India) &amp; In-Person (Nagpur)</span></div>
+      <div class="si-row"><span>Languages</span><span>English, Hindi, Marathi</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SOCIAL
+════════════════════════════════════════ -->
+<section class="soc" aria-labelledby="social-heading">
+  <div class="rv">
+    <span class="slabel">Connect With Me</span>
+    <h2 class="stitle" id="social-heading">Find Me Online</h2>
+    <p class="ssub" style="margin:0 auto;text-align:center">Follow for mental health tips, resources, and workshop updates.</p>
+  </div>
+  <div class="slinks rv">
+    <a href="https://www.linkedin.com/in/tejal-khedkar-44a15a232/" target="_blank" rel="noopener noreferrer" class="slink sl-li" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="slink sl-ig" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+    </a>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="slink sl-fb" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+    </a>
+    <a href="https://wa.me/918669988743" target="_blank" rel="noopener noreferrer" class="slink sl-wa" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <img class="footer-logo-bg" src="mindwave-counselling.png" alt="" aria-hidden="true"/>
+  <div class="fn">MindWave Counselling</div>
+  <p>
+    Counselling Psychologist &nbsp;·&nbsp; MSc Counselling Psychology &nbsp;·&nbsp; REBT &nbsp;·&nbsp; CBT &nbsp;·&nbsp; Integrative Therapy<br/>
+    <a href="mailto:mindwavecounselling@gmail.com">mindwavecounselling@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+918669988743">+91 86699 88743</a><br/><br/>
+    &copy; 2025 MindWave Counselling. All rights reserved.<br/>
+    <small>This website is for informational purposes only and does not constitute a therapeutic relationship. If you are in crisis, please contact iCall: 9152987821.</small>
+  </p>
+</footer>
+
+
+<!-- ── SCRIPTS ── -->
+<script src="main.js" defer></script>
+</body>
+</html>
