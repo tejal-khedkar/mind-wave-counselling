@@ -14,6 +14,53 @@
     </div>
     <div class="bk-form rv" style="transition-delay:.1s">
       <h3>Book a Session</h3>
+
+      <!-- ── SLOT PICKER ── -->
+      <div class="sp-wrap" id="slotPicker" aria-label="Available appointment slots">
+
+        <!-- Step 1: choose mode -->
+        <div class="sp-mode" id="spMode" role="group" aria-label="Session mode">
+          <span class="sp-label">How would you like to meet? <span class="sp-opt">(optional)</span></span>
+          <div class="sp-mode-btns">
+            <button class="sp-mode-btn" id="spModeOnline" type="button" aria-pressed="false" onclick="spSetMode('online')">
+              <span class="sp-mode-icon">💻</span>Online
+            </button>
+            <button class="sp-mode-btn" id="spModeInperson" type="button" aria-pressed="false" onclick="spSetMode('in-person')">
+              <span class="sp-mode-icon">🏢</span>In-Person
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: pick a slot (shown after mode is selected) -->
+        <div id="spSlotArea" style="display:none">
+          <div class="sp-header">
+            <span class="sp-label" id="spSlotLabel"></span>
+            <div class="sp-nav" role="group" aria-label="Week navigation">
+              <button class="sp-nav-btn" id="spPrev" onclick="spNavWeek(-1)" aria-label="Previous week" disabled>&#8592;</button>
+              <span class="sp-week-label" id="spWeekLabel" aria-live="polite"></span>
+              <button class="sp-nav-btn" id="spNext" onclick="spNavWeek(1)" aria-label="Next week">&#8594;</button>
+            </div>
+          </div>
+          <div class="sp-loading" id="spLoading">
+            <div class="sp-spinner" aria-hidden="true"></div>
+            <span>Loading available slots…</span>
+          </div>
+          <div class="sp-error" id="spError" role="alert" style="display:none">
+            Could not load slots. You can still submit the form — Tejal will be in touch to arrange a time.
+          </div>
+          <div class="sp-empty" id="spEmpty" style="display:none" aria-live="polite">
+            No slots available this week. Try the next week →
+          </div>
+          <div class="sp-cols" id="spCols" role="list" aria-label="Slots by date" style="display:none"></div>
+          <div class="sp-selected" id="spSelected" style="display:none" role="status" aria-live="polite">
+            <span class="sp-sel-text" id="spSelText"></span>
+            <button class="sp-desel-btn" onclick="spDeselect()" aria-label="Deselect slot">&#10005;</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- ── END SLOT PICKER ── -->
+
       <div class="frow">
         <div class="fg"><label for="bf">First Name</label><input type="text" id="bf" placeholder="First name" autocomplete="given-name"/></div>
         <div class="fg"><label for="bl">Last Name</label><input type="text" id="bl" placeholder="Last name" autocomplete="family-name"/></div>
@@ -24,12 +71,10 @@
         <label for="bt">Session Type</label>
         <select id="bt">
           <option value="">Select a session type</option>
-          <option>Individual Therapy</option>
-          <option>Couples Therapy</option>
-          <option>Group Session</option>
-          <option>Online Session</option>
-          <option>In-Person Session</option>
-          <option>Wellness Consultation</option>
+          <option value="Individual Therapy">Individual Therapy</option>
+          <option value="Couples Therapy">Couples Therapy</option>
+          <option value="Group Session">Group Session</option>
+          <option value="Wellness Consultation">Wellness Consultation</option>
         </select>
       </div>
       <div class="fg"><label for="bm">Message (Optional)</label><textarea id="bm" placeholder="Share anything you'd like me to know…"></textarea></div>

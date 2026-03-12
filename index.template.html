@@ -7,6 +7,8 @@
      ============================================= -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://www.google-analytics.com; frame-ancestors 'none';"/>
 
 <!-- ── PRIMARY SEO META ── -->
 <title>MindWave Counselling | Tejal Khedkar — Anxiety, Depression & Relationship Therapy in India</title>
@@ -17,8 +19,8 @@
 <link rel="canonical" href="https://www.mindwavecounselling.com/"/>
 
 <!-- ── FAVICON ── -->
-<link rel="icon" type="image/png" href="mindwave-counselling.png"/>
-<link rel="apple-touch-icon" href="mindwave-counselling.png"/>
+<link rel="icon" type="image/png" href="assets/logo-8.png"/>
+<link rel="apple-touch-icon" href="assets/logo-8.png"/>
 
 <!-- ── OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ── -->
 <meta property="og:type" content="website"/>
@@ -27,11 +29,17 @@
 <meta property="og:title" content="MindWave Counselling | Tejal Khedkar — Therapy for Anxiety, Depression & Relationships"/>
 <meta property="og:description" content="Professional online and in-person counselling with Tejal Khedkar. CBT, REBT & Integrative Therapy. Serving clients across India. Book a session today."/>
 <meta property="og:locale" content="en_IN"/>
+<meta property="og:image" content="https://www.mindwavecounselling.com/assets/profile-photo-1.png"/>
+<meta property="og:image:width" content="600"/>
+<meta property="og:image:height" content="750"/>
+<meta property="og:image:alt" content="Tejal Khedkar — Counselling Psychologist, MindWave Counselling"/>
 
 <!-- ── TWITTER CARD ── -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="MindWave Counselling | Tejal Khedkar"/>
 <meta name="twitter:description" content="Professional counselling for anxiety, depression, relationships & more. Online & in-person. Book with Tejal today."/>
+<meta name="twitter:image" content="https://www.mindwavecounselling.com/assets/profile-photo-1.png"/>
+<meta name="twitter:image:alt" content="Tejal Khedkar — Counselling Psychologist, MindWave Counselling"/>
 
 <!-- ── GEO / LOCAL SEO ── -->
 <meta name="geo.region" content="IN"/>
@@ -51,19 +59,20 @@
       "description": "MSc Counselling Psychology, certified in REBT and CBT, offering individual, couples and group therapy online and in-person across India.",
       "url": "https://www.mindwavecounselling.com/",
       "telephone": "+918669988743",
-      "email": "mindwavecounselling@gmail.com",
+      "email": "tejalkhedkar@mindwavecounselling.com",
       "knowsAbout": ["Anxiety", "Depression", "CBT", "REBT", "Couples Therapy", "Grief", "Burnout", "Integrative Therapy"],
       "knowsLanguage": ["English", "Hindi", "Marathi"],
-      "sameAs": ["https://www.linkedin.com","https://www.instagram.com"]
+      "sameAs": ["https://www.linkedin.com/in/tejal-khedkar-44a15a232/"]
     },
     {
       "@type": "MedicalBusiness",
       "@id": "https://www.mindwavecounselling.com/#business",
       "name": "MindWave Counselling",
+      "logo": "https://www.mindwavecounselling.com/assets/logo-8.png",
       "description": "Professional counselling and psychotherapy services for individuals, couples and groups. Specialising in anxiety, depression, REBT, CBT and integrative therapy.",
       "url": "https://www.mindwavecounselling.com/",
       "telephone": "+918669988743",
-      "email": "mindwavecounselling@gmail.com",
+      "email": "tejalkhedkar@mindwavecounselling.com",
       "priceRange": "₹₹",
       "currenciesAccepted": "INR",
       "openingHours": "Mo,Tu,We,Th,Fr,Sa 09:00-18:00",
@@ -117,18 +126,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 
+<!-- ── GOOGLE ANALYTICS ── -->
+<!-- Replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
 <!-- ── STYLESHEET ── -->
 <link rel="stylesheet" href="style.css"/>
 
-<!-- ── EMAIL JS ── -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 </head>
 
 <body>
 
 <!-- INCLUDE: sections/nav.html -->
 
-<main>
+<main id="main-content">
 <!-- INCLUDE: sections/hero.html -->
 
 <!-- INCLUDE: sections/about.html -->
@@ -137,9 +149,9 @@
 
 <!-- INCLUDE: sections/approach.html -->
 
-<!-- INCLUDE: sections/booking.html -->
-
 <!-- INCLUDE: sections/assessments.html -->
+
+<!-- INCLUDE: sections/booking.html -->
 
 <!-- INCLUDE: sections/testimonials.html -->
 
@@ -149,6 +161,7 @@
 </main>
 
 <!-- INCLUDE: sections/footer.html -->
+
 
 <!-- ── SCRIPTS ── -->
 <script src="main.js" defer></script>

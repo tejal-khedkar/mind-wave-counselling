@@ -13,10 +13,11 @@
         <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.90"/>
         <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
       </radialGradient>
+      <!-- Connection waves: teal → orange, mirroring logo wave flow -->
       <linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%"   stop-color="#c4844a" stop-opacity="0.55"/>
-        <stop offset="50%"  stop-color="#d4956a" stop-opacity="0.38"/>
-        <stop offset="100%" stop-color="#c4844a" stop-opacity="0.55"/>
+        <stop offset="0%"   stop-color="#1e5f74" stop-opacity="0.55"/>
+        <stop offset="50%"  stop-color="#8ab8c2" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#f07828" stop-opacity="0.55"/>
       </linearGradient>
       <linearGradient id="sweepG1" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%"   stop-color="#e8a27a" stop-opacity="0"/>
@@ -72,32 +73,32 @@
       <path d="M410,344 C420,366 416,394 402,408"/>
     </g>
 
-    <!-- ══ CONNECTION WAVES: brain → heart (desktop: 480→928) ══ -->
+    <!-- ══ CONNECTION WAVES: brain → heart (desktop: 480→928) — teal to orange ══ -->
     <path class="cw1"
       d="M480,372 C556,348 624,396 700,372 C776,348 844,390 928,372"
       fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
     <path class="cw2"
       d="M480,392 C560,368 632,416 708,392 C784,368 856,410 928,392"
-      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
     <path class="cw3"
       d="M480,412 C558,436 628,388 704,412 C780,436 852,394 928,414"
-      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
     <path class="cw4"
       d="M480,352 C564,328 636,370 712,350 C788,330 860,366 928,350"
-      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
     <!-- ══ CONNECTION WAVES: mobile only (680→780) ══ -->
     <path class="cw1m"
       d="M680,372 C706,348 754,396 780,372"
       fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
     <path class="cw2m"
       d="M680,392 C708,368 752,416 780,392"
-      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
     <path class="cw3m"
       d="M680,412 C708,436 752,388 780,412"
-      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
     <path class="cw4m"
       d="M680,352 C708,328 752,370 780,352"
-      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
 
     <!-- ══ HEART (right column, ~1060, 390) ══ -->
     <g class="heart-g-wrap">
@@ -151,7 +152,7 @@
       <a href="#about" class="btn-s">Meet Tejal</a>
     </div>
   </div>
-  <div class="rv" style="transition-delay:.15s">
+  <div class="rv hero-right" style="transition-delay:.15s">
     <div class="hero-card">
       <div class="hcn">Tejal Khedkar</div>
       <div class="hct">MSc · Counselling Psychologist · REBT &amp; CBT Certified</div>
@@ -164,6 +165,10 @@
         <span class="tag">CBT</span>
         <span class="tag">REBT</span>
       </div>
+    </div>
+    <div class="appr-quote hero-quote">
+      <blockquote>"Healing doesn't mean the damage never existed. It means the damage no longer controls our lives."</blockquote>
+      <cite>— A guiding principle in my practice</cite>
     </div>
   </div>
 </section>

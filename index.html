@@ -10,6 +10,8 @@
      ============================================= -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://www.google-analytics.com; frame-ancestors 'none';"/>
 
 <!-- ── PRIMARY SEO META ── -->
 <title>MindWave Counselling | Tejal Khedkar — Anxiety, Depression & Relationship Therapy in India</title>
@@ -20,8 +22,8 @@
 <link rel="canonical" href="https://www.mindwavecounselling.com/"/>
 
 <!-- ── FAVICON ── -->
-<link rel="icon" type="image/png" href="mindwave-counselling.png"/>
-<link rel="apple-touch-icon" href="mindwave-counselling.png"/>
+<link rel="icon" type="image/png" href="assets/logo-8.png"/>
+<link rel="apple-touch-icon" href="assets/logo-8.png"/>
 
 <!-- ── OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ── -->
 <meta property="og:type" content="website"/>
@@ -30,11 +32,17 @@
 <meta property="og:title" content="MindWave Counselling | Tejal Khedkar — Therapy for Anxiety, Depression & Relationships"/>
 <meta property="og:description" content="Professional online and in-person counselling with Tejal Khedkar. CBT, REBT & Integrative Therapy. Serving clients across India. Book a session today."/>
 <meta property="og:locale" content="en_IN"/>
+<meta property="og:image" content="https://www.mindwavecounselling.com/assets/profile-photo-1.png"/>
+<meta property="og:image:width" content="600"/>
+<meta property="og:image:height" content="750"/>
+<meta property="og:image:alt" content="Tejal Khedkar — Counselling Psychologist, MindWave Counselling"/>
 
 <!-- ── TWITTER CARD ── -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="MindWave Counselling | Tejal Khedkar"/>
 <meta name="twitter:description" content="Professional counselling for anxiety, depression, relationships & more. Online & in-person. Book with Tejal today."/>
+<meta name="twitter:image" content="https://www.mindwavecounselling.com/assets/profile-photo-1.png"/>
+<meta name="twitter:image:alt" content="Tejal Khedkar — Counselling Psychologist, MindWave Counselling"/>
 
 <!-- ── GEO / LOCAL SEO ── -->
 <meta name="geo.region" content="IN"/>
@@ -54,19 +62,20 @@
       "description": "MSc Counselling Psychology, certified in REBT and CBT, offering individual, couples and group therapy online and in-person across India.",
       "url": "https://www.mindwavecounselling.com/",
       "telephone": "+918669988743",
-      "email": "mindwavecounselling@gmail.com",
+      "email": "tejalkhedkar@mindwavecounselling.com",
       "knowsAbout": ["Anxiety", "Depression", "CBT", "REBT", "Couples Therapy", "Grief", "Burnout", "Integrative Therapy"],
       "knowsLanguage": ["English", "Hindi", "Marathi"],
-      "sameAs": ["https://www.linkedin.com","https://www.instagram.com"]
+      "sameAs": ["https://www.linkedin.com/in/tejal-khedkar-44a15a232/"]
     },
     {
       "@type": "MedicalBusiness",
       "@id": "https://www.mindwavecounselling.com/#business",
       "name": "MindWave Counselling",
+      "logo": "https://www.mindwavecounselling.com/assets/logo-8.png",
       "description": "Professional counselling and psychotherapy services for individuals, couples and groups. Specialising in anxiety, depression, REBT, CBT and integrative therapy.",
       "url": "https://www.mindwavecounselling.com/",
       "telephone": "+918669988743",
-      "email": "mindwavecounselling@gmail.com",
+      "email": "tejalkhedkar@mindwavecounselling.com",
       "priceRange": "₹₹",
       "currenciesAccepted": "INR",
       "openingHours": "Mo,Tu,We,Th,Fr,Sa 09:00-18:00",
@@ -120,11 +129,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 
+<!-- ── GOOGLE ANALYTICS ── -->
+<!-- Replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
 <!-- ── STYLESHEET ── -->
 <link rel="stylesheet" href="style.css"/>
 
-<!-- ── EMAIL JS ── -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 </head>
 
 <body>
@@ -132,9 +144,10 @@
 <!-- ════════════════════════════════════════
      NAVIGATION
 ════════════════════════════════════════ -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <nav role="navigation" aria-label="Main navigation">
   <a class="nav-logo" href="/" aria-label="MindWave Counselling — Home">
-    <img src="mindwave-counselling.png" alt="MindWave Counselling"/>
+    <img src="assets/logo-8.png" alt="MindWave Counselling"/>
     <div class="nav-logo-text">
       <span class="nav-logo-name">MindWave</span>
       <span class="nav-logo-tagline">Counselling</span>
@@ -155,7 +168,7 @@
 </nav>
 
 
-<main>
+<main id="main-content">
 <!-- ════════════════════════════════════════
      HERO
 ════════════════════════════════════════ -->
@@ -171,10 +184,11 @@
         <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.90"/>
         <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
       </radialGradient>
+      <!-- Connection waves: teal → orange, mirroring logo wave flow -->
       <linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%"   stop-color="#c4844a" stop-opacity="0.55"/>
-        <stop offset="50%"  stop-color="#d4956a" stop-opacity="0.38"/>
-        <stop offset="100%" stop-color="#c4844a" stop-opacity="0.55"/>
+        <stop offset="0%"   stop-color="#1e5f74" stop-opacity="0.55"/>
+        <stop offset="50%"  stop-color="#8ab8c2" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#f07828" stop-opacity="0.55"/>
       </linearGradient>
       <linearGradient id="sweepG1" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%"   stop-color="#e8a27a" stop-opacity="0"/>
@@ -230,32 +244,32 @@
       <path d="M410,344 C420,366 416,394 402,408"/>
     </g>
 
-    <!-- ══ CONNECTION WAVES: brain → heart (desktop: 480→928) ══ -->
+    <!-- ══ CONNECTION WAVES: brain → heart (desktop: 480→928) — teal to orange ══ -->
     <path class="cw1"
       d="M480,372 C556,348 624,396 700,372 C776,348 844,390 928,372"
       fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
     <path class="cw2"
       d="M480,392 C560,368 632,416 708,392 C784,368 856,410 928,392"
-      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
     <path class="cw3"
       d="M480,412 C558,436 628,388 704,412 C780,436 852,394 928,414"
-      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
     <path class="cw4"
       d="M480,352 C564,328 636,370 712,350 C788,330 860,366 928,350"
-      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
     <!-- ══ CONNECTION WAVES: mobile only (680→780) ══ -->
     <path class="cw1m"
       d="M680,372 C706,348 754,396 780,372"
       fill="none" stroke="url(#connGrad)" stroke-width="2.2" stroke-linecap="round"/>
     <path class="cw2m"
       d="M680,392 C708,368 752,416 780,392"
-      fill="none" stroke="rgba(196,132,106,0.42)" stroke-width="1.8" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
     <path class="cw3m"
       d="M680,412 C708,436 752,388 780,412"
-      fill="none" stroke="rgba(212,149,106,0.32)" stroke-width="1.5" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
     <path class="cw4m"
       d="M680,352 C708,328 752,370 780,352"
-      fill="none" stroke="rgba(196,132,106,0.22)" stroke-width="1.2" stroke-linecap="round"/>
+      fill="none" stroke="url(#connGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
 
     <!-- ══ HEART (right column, ~1060, 390) ══ -->
     <g class="heart-g-wrap">
@@ -309,7 +323,7 @@
       <a href="#about" class="btn-s">Meet Tejal</a>
     </div>
   </div>
-  <div class="rv" style="transition-delay:.15s">
+  <div class="rv hero-right" style="transition-delay:.15s">
     <div class="hero-card">
       <div class="hcn">Tejal Khedkar</div>
       <div class="hct">MSc · Counselling Psychologist · REBT &amp; CBT Certified</div>
@@ -323,6 +337,10 @@
         <span class="tag">REBT</span>
       </div>
     </div>
+    <div class="appr-quote hero-quote">
+      <blockquote>"Healing doesn't mean the damage never existed. It means the damage no longer controls our lives."</blockquote>
+      <cite>— A guiding principle in my practice</cite>
+    </div>
   </div>
 </section>
 
@@ -333,7 +351,7 @@
 <section class="about" id="about" aria-labelledby="about-heading">
   <div class="about-g">
     <div class="photo-wrap rv">
-      <img src="profile-photo-1.png" alt="Tejal Khedkar — Counselling Psychologist, MindWave Counselling" width="600" height="750" loading="lazy"/>
+      <img src="assets/profile-photo-1.png" alt="Tejal Khedkar — Counselling Psychologist, MindWave Counselling" width="600" height="750" loading="lazy"/>
       <div class="blob-badge"><strong>MSC</strong><span>Counselling Psychology</span></div>
     </div>
     <div class="rv" style="transition-delay:.1s">
@@ -430,10 +448,53 @@
         </div>
       </div>
     </div>
-    <div class="appr-quote rv" style="transition-delay:.15s">
-      <blockquote>"Healing doesn't mean the damage never existed. It means the damage no longer controls our lives."</blockquote>
-      <cite>— A guiding principle in my practice</cite>
+    <div class="appr-right rv" style="transition-delay:.15s">
+      <div class="appr-expect">
+        <h4>What to expect in a session</h4>
+        <ul>
+          <li>No judgement — you bring whatever's on your mind</li>
+          <li>You set the pace; nothing is forced</li>
+          <li>Practical tools you can use between sessions</li>
+          <li>First session is simply a conversation</li>
+        </ul>
+      </div>
+      <div class="appr-for">
+        <h4>This is for you if…</h4>
+        <ul>
+          <li>You feel stuck but can't quite explain why</li>
+          <li>You're high-functioning but quietly exhausted</li>
+          <li>You want to understand yourself, not just cope</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ASSESSMENTS
+════════════════════════════════════════ -->
+<section class="assess" id="assessments" aria-labelledby="assess-heading">
+  <div class="assess-hdr rv">
+    <span class="slabel">Self-Assessment Tools</span>
+    <h2 class="stitle" id="assess-heading">Understand How You're Feeling</h2>
+    <p class="ssub">These clinically validated questionnaires help you reflect on your mental health. Results are for personal awareness only — not a clinical diagnosis.</p>
+  </div>
+  <div class="assess-tabs rv" role="tablist" aria-label="Assessment types">
+    <button class="atab on" id="tab-bdi" role="tab" aria-selected="true" aria-controls="panel-bdi" onclick="switchTab('bdi')">🧠 Beck Depression Inventory (BDI-II)</button>
+    <button class="atab" id="tab-bai" role="tab" aria-selected="false" aria-controls="panel-bai" onclick="switchTab('bai')">💭 Beck Anxiety Inventory (BAI)</button>
+  </div>
+  <div class="apanel on" id="panel-bdi" role="tabpanel" aria-labelledby="tab-bdi">
+    <div class="anote">Read each group carefully and select the statement that <strong>best describes how you've been feeling over the past two weeks</strong>.</div>
+    <div id="bdi-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBDI()">Calculate My BDI Score →</button></div>
+    <div class="a-result" id="bdi-result" role="status" aria-live="polite"></div>
+  </div>
+  <div class="apanel" id="panel-bai" role="tabpanel" aria-labelledby="tab-bai">
+    <div class="anote">Indicate how much each symptom has <strong>bothered you during the past month</strong>, including today.</div>
+    <div id="bai-qs"></div>
+    <div class="assess-submit"><button class="btn-score" onclick="scoreBAI()">Calculate My BAI Score →</button></div>
+    <div class="a-result" id="bai-result" role="status" aria-live="polite"></div>
   </div>
 </section>
 
@@ -454,6 +515,53 @@
     </div>
     <div class="bk-form rv" style="transition-delay:.1s">
       <h3>Book a Session</h3>
+
+      <!-- ── SLOT PICKER ── -->
+      <div class="sp-wrap" id="slotPicker" aria-label="Available appointment slots">
+
+        <!-- Step 1: choose mode -->
+        <div class="sp-mode" id="spMode" role="group" aria-label="Session mode">
+          <span class="sp-label">How would you like to meet? <span class="sp-opt">(optional)</span></span>
+          <div class="sp-mode-btns">
+            <button class="sp-mode-btn" id="spModeOnline" type="button" aria-pressed="false" onclick="spSetMode('online')">
+              <span class="sp-mode-icon">💻</span>Online
+            </button>
+            <button class="sp-mode-btn" id="spModeInperson" type="button" aria-pressed="false" onclick="spSetMode('in-person')">
+              <span class="sp-mode-icon">🏢</span>In-Person
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: pick a slot (shown after mode is selected) -->
+        <div id="spSlotArea" style="display:none">
+          <div class="sp-header">
+            <span class="sp-label" id="spSlotLabel"></span>
+            <div class="sp-nav" role="group" aria-label="Week navigation">
+              <button class="sp-nav-btn" id="spPrev" onclick="spNavWeek(-1)" aria-label="Previous week" disabled>&#8592;</button>
+              <span class="sp-week-label" id="spWeekLabel" aria-live="polite"></span>
+              <button class="sp-nav-btn" id="spNext" onclick="spNavWeek(1)" aria-label="Next week">&#8594;</button>
+            </div>
+          </div>
+          <div class="sp-loading" id="spLoading">
+            <div class="sp-spinner" aria-hidden="true"></div>
+            <span>Loading available slots…</span>
+          </div>
+          <div class="sp-error" id="spError" role="alert" style="display:none">
+            Could not load slots. You can still submit the form — Tejal will be in touch to arrange a time.
+          </div>
+          <div class="sp-empty" id="spEmpty" style="display:none" aria-live="polite">
+            No slots available this week. Try the next week →
+          </div>
+          <div class="sp-cols" id="spCols" role="list" aria-label="Slots by date" style="display:none"></div>
+          <div class="sp-selected" id="spSelected" style="display:none" role="status" aria-live="polite">
+            <span class="sp-sel-text" id="spSelText"></span>
+            <button class="sp-desel-btn" onclick="spDeselect()" aria-label="Deselect slot">&#10005;</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- ── END SLOT PICKER ── -->
+
       <div class="frow">
         <div class="fg"><label for="bf">First Name</label><input type="text" id="bf" placeholder="First name" autocomplete="given-name"/></div>
         <div class="fg"><label for="bl">Last Name</label><input type="text" id="bl" placeholder="Last name" autocomplete="family-name"/></div>
@@ -464,46 +572,16 @@
         <label for="bt">Session Type</label>
         <select id="bt">
           <option value="">Select a session type</option>
-          <option>Individual Therapy</option>
-          <option>Couples Therapy</option>
-          <option>Group Session</option>
-          <option>Online Session</option>
-          <option>In-Person Session</option>
-          <option>Wellness Consultation</option>
+          <option value="Individual Therapy">Individual Therapy</option>
+          <option value="Couples Therapy">Couples Therapy</option>
+          <option value="Group Session">Group Session</option>
+          <option value="Wellness Consultation">Wellness Consultation</option>
         </select>
       </div>
       <div class="fg"><label for="bm">Message (Optional)</label><textarea id="bm" placeholder="Share anything you'd like me to know…"></textarea></div>
       <button class="btn-book" id="bookBtn" onclick="doBook()">Request Appointment →</button>
       <div class="form-msg" id="formMsg" role="alert"></div>
     </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════
-     ASSESSMENTS
-════════════════════════════════════════ -->
-<section class="assess" id="assessments" aria-labelledby="assess-heading">
-  <div class="assess-hdr rv">
-    <span class="slabel">Self-Assessment Tools</span>
-    <h2 class="stitle" id="assess-heading">Understand How You're Feeling</h2>
-    <p class="ssub">These clinically validated questionnaires help you reflect on your mental health. Results are for personal awareness only — not a clinical diagnosis.</p>
-  </div>
-  <div class="assess-tabs rv">
-    <button class="atab on" id="tab-bdi" onclick="switchTab('bdi')" aria-selected="true">🧠 Beck Depression Inventory (BDI-II)</button>
-    <button class="atab" id="tab-bai" onclick="switchTab('bai')" aria-selected="false">💭 Beck Anxiety Inventory (BAI)</button>
-  </div>
-  <div class="apanel on" id="panel-bdi" role="tabpanel">
-    <div class="anote">Read each group carefully and select the statement that <strong>best describes how you've been feeling over the past two weeks</strong>.</div>
-    <div id="bdi-qs"></div>
-    <div class="assess-submit"><button class="btn-score" onclick="scoreBDI()">Calculate My BDI Score →</button></div>
-    <div class="a-result" id="bdi-result" role="status"></div>
-  </div>
-  <div class="apanel" id="panel-bai" role="tabpanel">
-    <div class="anote">Indicate how much each symptom has <strong>bothered you during the past month</strong>, including today.</div>
-    <div id="bai-qs"></div>
-    <div class="assess-submit"><button class="btn-score" onclick="scoreBAI()">Calculate My BAI Score →</button></div>
-    <div class="a-result" id="bai-result" role="status"></div>
   </div>
 </section>
 
@@ -562,24 +640,33 @@
       <h2 class="stitle" id="contact-heading">Let's Start a Conversation</h2>
       <p class="ssub">Feel free to reach out with questions before booking. Happy to have a brief introductory call.</p>
       <div class="con-cards">
-        <a class="con-card" href="mailto:mindwavecounselling@gmail.com" aria-label="Send an email to Tejal">
+        <a class="con-card" href="mailto:tejalkhedkar@mindwavecounselling.com" aria-label="Send an email to Tejal">
           <div class="con-icon" style="background:#fce8e0" aria-hidden="true">📧</div>
-          <div><strong>mindwavecounselling@gmail.com</strong><span>Email me anytime</span></div>
+          <div><strong>tejalkhedkar@mindwavecounselling.com</strong><span>Email me anytime</span></div>
         </a>
+        <!-- PHONE HIDDEN: restore when business number is ready
         <a class="con-card" href="tel:+918669988743" aria-label="Call Tejal">
           <div class="con-icon" style="background:#e8f2e8" aria-hidden="true">📞</div>
           <div><strong>+91 86699 88743</strong><span>Call during working hours</span></div>
         </a>
+        -->
+        <!-- WHATSAPP HIDDEN: restore when business number is ready
         <a class="con-card" href="https://wa.me/918669988743" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Tejal">
           <div class="con-icon" style="background:#e0f7ea" aria-hidden="true">💬</div>
           <div><strong>WhatsApp Me</strong><span>Quick responses Mon–Sat</span></div>
         </a>
+        -->
       </div>
     </div>
     <div class="si-box rv" style="transition-delay:.1s">
       <h3>Session Information</h3>
       <div class="si-row"><span>Duration</span><span>50–60 minutes</span></div>
-      <div class="si-row"><span>Session Fee</span><span>Discussed on inquiry</span></div>
+      <div class="si-row"><span>Individual (Online)</span><span>₹800 / session</span></div>
+      <div class="si-row"><span>Individual (In-Person)</span><span>₹1,000 / session</span></div>
+      <div class="si-row"><span>Couples (Online)</span><span>₹1,200 / session</span></div>
+      <div class="si-row"><span>Couples (In-Person)</span><span>₹1,500 / session</span></div>
+      <div class="si-row"><span>Group Session</span><span>₹400 / person</span></div>
+      <div class="si-row"><span>Wellness Consultation</span><span>₹500 / session</span></div>
       <div class="si-row"><span>Availability</span><span>Mon – Sat</span></div>
       <div class="si-row"><span>Format</span><span>Online (pan-India) &amp; In-Person (Nagpur)</span></div>
       <div class="si-row"><span>Languages</span><span>English, Hindi, Marathi</span></div>
@@ -607,9 +694,11 @@
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="slink sl-fb" aria-label="Facebook">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
     </a>
+    <!-- WHATSAPP HIDDEN: restore number when business number is ready
     <a href="https://wa.me/918669988743" target="_blank" rel="noopener noreferrer" class="slink sl-wa" aria-label="WhatsApp">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>WhatsApp
     </a>
+    -->
   </div>
 </section>
 
@@ -619,15 +708,18 @@
      FOOTER
 ════════════════════════════════════════ -->
 <footer>
-  <img class="footer-logo-bg" src="mindwave-counselling.png" alt="" aria-hidden="true"/>
-  <div class="fn">MindWave Counselling</div>
   <p>
     Counselling Psychologist &nbsp;·&nbsp; MSc Counselling Psychology &nbsp;·&nbsp; REBT &nbsp;·&nbsp; CBT &nbsp;·&nbsp; Integrative Therapy<br/>
-    <a href="mailto:mindwavecounselling@gmail.com">mindwavecounselling@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+918669988743">+91 86699 88743</a><br/><br/>
-    &copy; 2025 MindWave Counselling. All rights reserved.<br/>
-    <small>This website is for informational purposes only and does not constitute a therapeutic relationship. If you are in crisis, please contact iCall: 9152987821.</small>
+    <a href="mailto:tejalkhedkar@mindwavecounselling.com">tejalkhedkar@mindwavecounselling.com</a><br/><br/>
+    <!-- PHONE HIDDEN: restore when business number is ready
+    &nbsp;·&nbsp; <a href="tel:+918669988743">+91 86699 88743</a>
+    -->
+    &copy; <span id="copy-year">2026</span> MindWave Counselling. All rights reserved.<br/>
+    <small>This website is for informational purposes only and does not constitute a therapeutic relationship. If you are in crisis, please contact iCall: 9152987821.</small><br/>
+    <small><a href="privacy.html" style="color:rgba(255,255,255,.45);">Privacy Policy</a></small>
   </p>
 </footer>
+
 
 
 <!-- ── SCRIPTS ── -->
