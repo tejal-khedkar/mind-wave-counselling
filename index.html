@@ -22,8 +22,11 @@
 <link rel="canonical" href="https://www.mindwavecounselling.com/"/>
 
 <!-- ── FAVICON ── -->
-<link rel="icon" type="image/png" href="assets/logo-8.png"/>
-<link rel="apple-touch-icon" href="assets/logo-8.png"/>
+<link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png"/>
+<link rel="manifest" href="assets/favicon_io/site.webmanifest"/>
 
 <!-- ── OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ── -->
 <meta property="og:type" content="website"/>
@@ -339,13 +342,26 @@
         <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
     </defs>
+
+    <!-- Ambient glows -->
     <ellipse cx="200" cy="155" rx="180" ry="155" fill="url(#brainGlowM)"/>
     <ellipse cx="200" cy="545" rx="190" ry="158" fill="url(#heartGlowM)"/>
+
+    <!-- Sweep atmosphere -->
     <path d="M60,-10 C80,200 70,420 60,710"   fill="none" stroke="url(#sweepGV)" stroke-width="70" stroke-linecap="round" opacity="0.18"/>
     <path d="M340,-10 C320,200 330,420 340,710" fill="none" stroke="url(#sweepGV)" stroke-width="55" stroke-linecap="round" opacity="0.14"/>
+
+    <!-- BRAIN at (200, 155), scale 0.50 -->
     <g transform="translate(200,155) scale(0.50) translate(-340,-390)">
       <g class="brain-shape" filter="url(#glowM)">
-        <path d="M340,294 C386,272 442,278 468,312 C492,342 488,378 466,400 C484,418 492,450 480,474 C468,498 442,508 414,502 C396,520 370,528 344,522 C336,528 328,530 320,526 C312,530 304,528 296,522 C270,528 244,520 226,502 C198,508 172,498 160,474 C148,450 156,418 174,400 C152,378 148,342 172,312 C198,278 254,272 300,294 C312,288 326,286 340,294 Z" fill="rgba(232,162,122,0.10)" stroke="rgba(196,132,106,0.38)" stroke-width="1.8"/>
+        <path d="M340,294 C386,272 442,278 468,312 C492,342 488,378 466,400
+                 C484,418 492,450 480,474 C468,498 442,508 414,502
+                 C396,520 370,528 344,522 C336,528 328,530 320,526
+                 C312,530 304,528 296,522 C270,528 244,520 226,502
+                 C198,508 172,498 160,474 C148,450 156,418 174,400
+                 C152,378 148,342 172,312 C198,278 254,272 300,294
+                 C312,288 326,286 340,294 Z"
+          fill="rgba(232,162,122,0.10)" stroke="rgba(196,132,106,0.38)" stroke-width="1.8"/>
       </g>
       <g class="brain-folds" fill="none" stroke="rgba(160,100,68,0.26)" stroke-width="1.1" stroke-linecap="round">
         <path d="M296,312 C310,296 328,298 336,316 C344,332 338,354 322,360"/>
@@ -358,15 +374,23 @@
         <path d="M410,344 C420,366 416,394 402,408"/>
       </g>
     </g>
+
+    <!-- Vertical connection waves (y: 272 → 428, centred at x=200) -->
     <path class="cwv1" d="M200,272 C168,298 232,326 200,352 C168,378 232,406 200,428" fill="none" stroke="url(#connGradV)" stroke-width="2.2" stroke-linecap="round"/>
     <path class="cwv2" d="M190,272 C158,298 222,326 192,352 C160,378 222,406 192,428" fill="none" stroke="url(#connGradV)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
     <path class="cwv3" d="M210,272 C178,298 242,326 210,352 C178,378 242,406 210,428" fill="none" stroke="url(#connGradV)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
     <path class="cwv4" d="M200,262 C170,290 230,318 200,346 C170,374 230,402 200,428" fill="none" stroke="url(#connGradV)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
+
+    <!-- HEART at (200, 545), scale 0.50 -->
     <g class="heart-g-wrap-m">
       <g transform="translate(200,545) scale(0.50) translate(-1060,-390)">
-        <path filter="url(#glowM)" d="M1060,316 C982,260 924,294 924,368 C924,442 1060,526 1060,526 C1060,526 1196,442 1196,368 C1196,294 1138,260 1060,316 Z" fill="rgba(232,162,122,0.12)" stroke="rgba(196,132,106,0.44)" stroke-width="2.2"/>
-        <path d="M1060,348 C1002,308 956,332 956,380 C956,428 1060,496 1060,496 C1060,496 1164,428 1164,380 C1164,332 1118,308 1060,348 Z" fill="rgba(212,149,106,0.12)" stroke="rgba(196,132,106,0.32)" stroke-width="1.7"/>
-        <path d="M1060,378 C1034,358 1008,372 1008,400 C1008,428 1060,460 1060,460 C1060,460 1112,428 1112,400 C1112,372 1086,358 1060,378 Z" fill="rgba(196,132,106,0.10)" stroke="rgba(196,132,106,0.25)" stroke-width="1.3"/>
+        <path filter="url(#glowM)"
+          d="M1060,316 C982,260 924,294 924,368 C924,442 1060,526 1060,526 C1060,526 1196,442 1196,368 C1196,294 1138,260 1060,316 Z"
+          fill="rgba(232,162,122,0.12)" stroke="rgba(196,132,106,0.44)" stroke-width="2.2"/>
+        <path d="M1060,348 C1002,308 956,332 956,380 C956,428 1060,496 1060,496 C1060,496 1164,428 1164,380 C1164,332 1118,308 1060,348 Z"
+          fill="rgba(212,149,106,0.12)" stroke="rgba(196,132,106,0.32)" stroke-width="1.7"/>
+        <path d="M1060,378 C1034,358 1008,372 1008,400 C1008,428 1060,460 1060,460 C1060,460 1112,428 1112,400 C1112,372 1086,358 1060,378 Z"
+          fill="rgba(196,132,106,0.10)" stroke="rgba(196,132,106,0.25)" stroke-width="1.3"/>
         <g fill="none" stroke="rgba(155,96,68,0.26)" stroke-width="1.1" stroke-linecap="round">
           <path d="M1020,358 C1034,342 1054,346 1062,364 C1070,380 1064,402 1048,410"/>
           <path d="M1100,358 C1086,342 1066,346 1058,364"/>
@@ -377,6 +401,8 @@
         </g>
       </g>
     </g>
+
+    <!-- Particles -->
     <circle class="p1" cx="118" cy="318" r="3.0" fill="rgba(196,132,106,0.52)"/>
     <circle class="p2" cx="282" cy="295" r="2.5" fill="rgba(212,149,106,0.48)"/>
     <circle class="p3" cx="148" cy="455" r="2.2" fill="rgba(196,132,106,0.42)"/>
