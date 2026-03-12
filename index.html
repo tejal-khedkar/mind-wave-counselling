@@ -313,6 +313,86 @@
     </g>
   </svg>
 
+  <!-- Vertical SVG for mobile only (brain top → waves → heart bottom) -->
+  <svg class="hero-bg-svg hero-bg-svg--mobile" viewBox="0 0 400 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="brainGlowM" cx="50%" cy="22%" r="35%">
+        <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="heartGlowM" cx="50%" cy="78%" r="35%">
+        <stop offset="0%"   stop-color="#f5e6d4" stop-opacity="0.90"/>
+        <stop offset="100%" stop-color="#fdf8f3" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="connGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="#1e5f74" stop-opacity="0.55"/>
+        <stop offset="50%"  stop-color="#8ab8c2" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#f07828" stop-opacity="0.55"/>
+      </linearGradient>
+      <linearGradient id="sweepGV" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="#e8a27a" stop-opacity="0"/>
+        <stop offset="45%"  stop-color="#c4844a" stop-opacity="0.20"/>
+        <stop offset="100%" stop-color="#e8a27a" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="glowM">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <ellipse cx="200" cy="155" rx="180" ry="155" fill="url(#brainGlowM)"/>
+    <ellipse cx="200" cy="545" rx="190" ry="158" fill="url(#heartGlowM)"/>
+    <path d="M60,-10 C80,200 70,420 60,710"   fill="none" stroke="url(#sweepGV)" stroke-width="70" stroke-linecap="round" opacity="0.18"/>
+    <path d="M340,-10 C320,200 330,420 340,710" fill="none" stroke="url(#sweepGV)" stroke-width="55" stroke-linecap="round" opacity="0.14"/>
+    <g transform="translate(200,155) scale(0.50) translate(-340,-390)">
+      <g class="brain-shape" filter="url(#glowM)">
+        <path d="M340,294 C386,272 442,278 468,312 C492,342 488,378 466,400 C484,418 492,450 480,474 C468,498 442,508 414,502 C396,520 370,528 344,522 C336,528 328,530 320,526 C312,530 304,528 296,522 C270,528 244,520 226,502 C198,508 172,498 160,474 C148,450 156,418 174,400 C152,378 148,342 172,312 C198,278 254,272 300,294 C312,288 326,286 340,294 Z" fill="rgba(232,162,122,0.10)" stroke="rgba(196,132,106,0.38)" stroke-width="1.8"/>
+      </g>
+      <g class="brain-folds" fill="none" stroke="rgba(160,100,68,0.26)" stroke-width="1.1" stroke-linecap="round">
+        <path d="M296,312 C310,296 328,298 336,316 C344,332 338,354 322,360"/>
+        <path d="M282,362 C270,382 274,408 288,422 C300,434 318,430 324,414"/>
+        <path d="M316,298 C328,284 352,284 364,298"/>
+        <path d="M384,312 C370,296 352,298 344,316"/>
+        <path d="M398,362 C410,382 406,408 392,422 C380,434 362,430 356,414"/>
+        <path d="M340,314 C338,346 338,382 340,422" stroke-dasharray="3,8" stroke-opacity="0.40"/>
+        <path d="M270,344 C260,366 264,394 278,408"/>
+        <path d="M410,344 C420,366 416,394 402,408"/>
+      </g>
+    </g>
+    <path class="cwv1" d="M200,272 C168,298 232,326 200,352 C168,378 232,406 200,428" fill="none" stroke="url(#connGradV)" stroke-width="2.2" stroke-linecap="round"/>
+    <path class="cwv2" d="M190,272 C158,298 222,326 192,352 C160,378 222,406 192,428" fill="none" stroke="url(#connGradV)" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+    <path class="cwv3" d="M210,272 C178,298 242,326 210,352 C178,378 242,406 210,428" fill="none" stroke="url(#connGradV)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+    <path class="cwv4" d="M200,262 C170,290 230,318 200,346 C170,374 230,402 200,428" fill="none" stroke="url(#connGradV)" stroke-width="1.2" stroke-linecap="round" opacity="0.38"/>
+    <g class="heart-g-wrap-m">
+      <g transform="translate(200,545) scale(0.50) translate(-1060,-390)">
+        <path filter="url(#glowM)" d="M1060,316 C982,260 924,294 924,368 C924,442 1060,526 1060,526 C1060,526 1196,442 1196,368 C1196,294 1138,260 1060,316 Z" fill="rgba(232,162,122,0.12)" stroke="rgba(196,132,106,0.44)" stroke-width="2.2"/>
+        <path d="M1060,348 C1002,308 956,332 956,380 C956,428 1060,496 1060,496 C1060,496 1164,428 1164,380 C1164,332 1118,308 1060,348 Z" fill="rgba(212,149,106,0.12)" stroke="rgba(196,132,106,0.32)" stroke-width="1.7"/>
+        <path d="M1060,378 C1034,358 1008,372 1008,400 C1008,428 1060,460 1060,460 C1060,460 1112,428 1112,400 C1112,372 1086,358 1060,378 Z" fill="rgba(196,132,106,0.10)" stroke="rgba(196,132,106,0.25)" stroke-width="1.3"/>
+        <g fill="none" stroke="rgba(155,96,68,0.26)" stroke-width="1.1" stroke-linecap="round">
+          <path d="M1020,358 C1034,342 1054,346 1062,364 C1070,380 1064,402 1048,410"/>
+          <path d="M1100,358 C1086,342 1066,346 1058,364"/>
+          <path d="M1010,404 C1000,422 1004,448 1018,460 C1030,470 1048,466 1054,450"/>
+          <path d="M1110,404 C1120,422 1116,448 1102,460 C1090,470 1072,466 1066,450"/>
+          <path d="M1040,340 C1052,328 1070,328 1082,340"/>
+          <path d="M1060,364 C1058,392 1058,428 1060,454" stroke-dasharray="3,7" stroke-opacity="0.40"/>
+        </g>
+      </g>
+    </g>
+    <circle class="p1" cx="118" cy="318" r="3.0" fill="rgba(196,132,106,0.52)"/>
+    <circle class="p2" cx="282" cy="295" r="2.5" fill="rgba(212,149,106,0.48)"/>
+    <circle class="p3" cx="148" cy="455" r="2.2" fill="rgba(196,132,106,0.42)"/>
+    <circle class="p4" cx="258" cy="462" r="2.8" fill="rgba(212,149,106,0.40)"/>
+    <circle class="p5" cx="72"  cy="195" r="2.5" fill="rgba(196,132,106,0.38)"/>
+    <circle class="p6" cx="328" cy="188" r="2.8" fill="rgba(212,149,106,0.42)"/>
+    <circle class="p7" cx="85"  cy="588" r="2.0" fill="rgba(196,132,106,0.35)"/>
+    <circle class="p8" cx="315" cy="602" r="2.5" fill="rgba(212,149,106,0.44)"/>
+    <g fill="rgba(196,132,106,0.14)">
+      <circle cx="38"  cy="350" r="2.5"/>
+      <circle cx="362" cy="350" r="2.0"/>
+      <circle cx="200" cy="55"  r="3.0"/>
+      <circle cx="200" cy="645" r="2.2"/>
+    </g>
+  </svg>
+
   <div class="rv">
     <div class="hero-badge"><i></i>Now Accepting New Clients</div>
     <h1>You Deserve a Mind<br/>That Feels at <em>Peace.</em></h1>
@@ -688,7 +768,7 @@
     <a href="https://www.linkedin.com/in/tejal-khedkar-44a15a232/" target="_blank" rel="noopener noreferrer" class="slink sl-li" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
     </a>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="slink sl-ig" aria-label="Instagram">
+    <a href="https://www.instagram.com/_mindwavecounselling_?igsh=MTNjb3p4ajR4c3Rzdw==" target="_blank" rel="noopener noreferrer" class="slink sl-ig" aria-label="Instagram">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
     </a>
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="slink sl-fb" aria-label="Facebook">
